@@ -1,9 +1,8 @@
 import React from 'react';
+import Greeting from '../components/Greeting';
 
 const Home = () => (
-  <div>
-    Boom, a homepage!
-  </div>
-)
+  <Greeting />
+);
 
 export default Home;
