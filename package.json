@@ -6,7 +6,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint-eslint": "eslint components pages",
+    "lint-eslint": "eslint components pages --ext .js,.jsx",
     "lint": "npm run lint-eslint",
     "deploy": "now --public && now alias && now rm $npm_package_now_name --safe --yes"
   },
@@ -20,6 +20,7 @@
     "react-dom": "^16.7.0-alpha.2"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
