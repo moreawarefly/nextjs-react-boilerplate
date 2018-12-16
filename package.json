@@ -8,7 +8,9 @@
     "start": "next start",
     "lint-eslint": "eslint components pages --ext .js,.jsx",
     "lint": "npm run lint-eslint",
-    "deploy": "now --public && now alias && now rm $npm_package_now_name --safe --yes"
+    "deploy": "now --public && now alias && now rm $npm_package_now_name --safe --yes",
+    "jest": "jest --watch",
+    "test": "jest"
   },
   "now": {
     "name": "nextjs-react-boilerplate"
@@ -26,7 +28,9 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.6.3"
   },
   "repository": {
     "type": "git",
