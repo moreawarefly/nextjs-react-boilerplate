@@ -10,7 +10,7 @@
     "lint": "npm run lint-eslint",
     "deploy": "now --public && now alias && now rm $npm_package_now_name --safe --yes",
     "jest": "jest --watch",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "now": {
     "name": "nextjs-react-boilerplate"
